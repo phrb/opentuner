@@ -261,6 +261,7 @@ import differentialevolution
 import simplextechniques
 import patternsearch
 import simulatedannealing
+import iterated_local_search
 from pso import PSO, HybridParticle
 import globalGA
 register(AUCBanditMutationTechnique())
@@ -270,6 +271,7 @@ register(AUCBanditMetaTechnique([
         evolutionarytechniques.UniformGreedyMutation(),
         evolutionarytechniques.NormalGreedyMutation(mutation_rate=0.3),
         simplextechniques.RandomNelderMead(),
+        iterated_local_search.IteratedLocalSearch(),
       ], name = "AUCBanditMetaTechniqueA"))
 register(AUCBanditMetaTechnique([
         differentialevolution.DifferentialEvolutionAlt(),

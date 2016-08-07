@@ -44,5 +44,4 @@ class DriverBase(object):
   def requests_query(self):
     q = self.session.query(DesiredResult).filter_by(tuning_run=self.tuning_run)
     return q
-    
 
